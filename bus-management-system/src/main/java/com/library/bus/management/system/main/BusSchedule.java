@@ -3,17 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.library.bus.management.system.main;
-
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 /**
  *
  * @author HP
  */
-
-
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-
 public class BusSchedule {
     private int scheduleId;
     private int busId;
@@ -43,10 +39,10 @@ public class BusSchedule {
         this.arrivalTime = arrivalTime;
         this.scheduleDate = scheduleDate;
         this.availableSeats = availableSeats;
-        this.createdBy = "hirushasuhan";
+        this.createdBy = "Hirusha suhan";
     }
     
-    // Getters and Setters
+    
     public int getScheduleId() { return scheduleId; }
     public void setScheduleId(int scheduleId) { this.scheduleId = scheduleId; }
     

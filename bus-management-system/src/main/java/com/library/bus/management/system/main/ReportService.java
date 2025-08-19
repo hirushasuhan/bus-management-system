@@ -3,21 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.library.bus.management.system.main;
-
+import java.sql.Date;
+import java.util.List;
 /**
  *
  * @author HP
  */
-
-
-import java.sql.Date;
-import java.util.List;
-
 public class ReportService {
     
     public static void generateCompleteReport() {
         String currentDateTime = "2025-08-18 06:26:08 UTC";
-        String currentUser = "hirushasuhan";
+        String currentUser = "Hirusha suhan";
         
         System.out.println("\n" + "=".repeat(95));
         System.out.println("                      BUS MANAGEMENT SYSTEM - COMPLETE REPORT");
@@ -34,7 +30,7 @@ public class ReportService {
         
         System.out.println("=".repeat(95));
         System.out.println("                                END OF REPORT");
-        System.out.println("                          System developed by: hirushasuhan");
+        System.out.println("                          System developed by: Hirusha suhan");
         System.out.println("                          Report generated at: " + currentDateTime);
         System.out.println("=".repeat(95));
     }
@@ -207,7 +203,7 @@ public class ReportService {
         
         System.out.println("\nSYSTEM STATUS: OPERATIONAL");
         System.out.println("Last Updated: 2025-08-18 06:26:08 UTC");
-        System.out.println("System Administrator: hirushasuhan");
+        System.out.println("System Administrator: Hirusha suhan");
         System.out.println("Database: MySQL 8.0 - Connected");
         System.out.println("Application: Java 8 Maven - Running");
     }

@@ -3,18 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.library.bus.management.system.main;
-
-/**
- *
- * @author HP
- */
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+/**
+ *
+ * @author HP
+ */
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/bus_management_system_new";
     private static final String USERNAME = "root"; // Change as per your MySQL setup
@@ -27,9 +23,10 @@ public class DatabaseConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("MySQL JDBC Driver loaded successfully!");
             System.out.println("System Date: 2025-08-18 06:26:08 UTC");
-            System.out.println("Current User: hirushasuhan");
+            System.out.println("Current User: Hirusha suhan");
         } catch (ClassNotFoundException e) {
-            System.err.println("MySQL JDBC Driver not found: " + e.getMessage());
+            System.err.println("MySQL JDBC Driver not found: "
+                    + "" + e.getMessage());
         }
     }
     
@@ -87,6 +84,6 @@ public class DatabaseConnection {
         System.out.println("Username: " + USERNAME);
         System.out.println("Status: " + (testConnection() ? "Connected" : "Disconnected"));
         System.out.println("Last Check: 2025-08-18 06:26:08 UTC");
-        System.out.println("By: hirushasuhan\n");
+        System.out.println("By: Hirusha suhan\n");
     }
 }

@@ -3,24 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.library.bus.management.system.main;
+import java.sql.Date;
+import java.util.List;
+import java.util.Scanner;
 
 /**
  *
  * @author HP
  */
-
-
-import java.sql.Date;
-import java.util.List;
-import java.util.Scanner;
-
 public class BusManagementSystem {
     private Scanner scanner;
     
     private static final String CURRENT_DATE = "2025-08-18";
     private static final String CURRENT_TIME = "06:39:50";
     private static final String CURRENT_DATETIME = "2025-08-18 06:39:50 UTC";
-    private static final String CURRENT_USER = "hirushasuhan";
+    private static final String CURRENT_USER = "Hirusha suhan";
     
     public BusManagementSystem() {
         this.scanner = new Scanner(System.in);
@@ -624,12 +621,12 @@ public class BusManagementSystem {
                 System.out.println("\nAvailable Buses:");
                 System.out.println("Search: " + source + " -> " + destination + " on " + dateStr);
                 System.out.println("-".repeat(120));
-                System.out.printf("%-5s %-12s %-25s %-12s %-12s %-8s %-8s%n",
+                System.out.printf("%-5s %-12s %-35s %-12s %-12s %-8s %-8s%n",
                         "ID", "Bus Number", "Route", "Departure", "Arrival", "Type", "Seats");
                 System.out.println("-".repeat(120));
                 
                 for (BusSchedule schedule : schedules) {
-                    System.out.printf("%-5d %-12s %-25s %-12s %-12s %-8s %-8d%n",
+                    System.out.printf("%-5d %-12s %-35s %-12s %-12s %-8s %-8d%n",
                             schedule.getScheduleId(), schedule.getBusNumber(),
                             schedule.getSource() + "->" + schedule.getDestination(),
                             schedule.getDepartureTime(), schedule.getArrivalTime(),
@@ -662,11 +659,11 @@ public class BusManagementSystem {
             return;
         }
         
-        System.out.printf("%-5s %-25s %-30s %-10s%n", "ID", "Route Name", "Route", "Type");
+        System.out.printf("%-5s %-35s %-30s %-10s%n", "ID", "Route Name", "Route", "Type");
         System.out.println("-".repeat(75));
         
         for (Route route : routes) {
-            System.out.printf("%-5d %-25s %-30s %-10s%n", 
+            System.out.printf("%-5d %-35s %-30s %-10s%n", 
                     route.getRouteId(), route.getRouteName(), 
                     route.getSource() + " -> " + route.getDestination(),
                     route.getRouteType().toUpperCase());
@@ -710,10 +707,10 @@ public class BusManagementSystem {
     private void viewAllRoutesInline() {
         List<Route> routes = Route.getAllRoutes();
         if (!routes.isEmpty()) {
-            System.out.printf("%-5s %-25s %-30s %-10s%n", "ID", "Route Name", "Route", "Type");
+            System.out.printf("%-5s %-35s %-30s %-10s%n", "ID", "Route Name", "Route", "Type");
             System.out.println("-".repeat(75));
             for (Route route : routes) {
-                System.out.printf("%-5d %-25s %-30s %-10s%n", 
+                System.out.printf("%-5d %-35s %-30s %-10s%n", 
                         route.getRouteId(), route.getRouteName(), 
                         route.getSource() + " -> " + route.getDestination(),
                         route.getRouteType().toUpperCase());

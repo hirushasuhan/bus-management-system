@@ -3,17 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.library.bus.management.system.main;
-
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 /**
  *
  * @author HP
  */
-
-
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Bus {
     private int busId;
     private String busNumber;
@@ -42,7 +38,6 @@ public class Bus {
         this.createdBy = "hirushasuhan";
     }
     
-    // Getters and Setters
     public int getBusId() { return busId; }
     public void setBusId(int busId) { this.busId = busId; }
     

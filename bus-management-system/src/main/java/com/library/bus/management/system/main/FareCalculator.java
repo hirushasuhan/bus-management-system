@@ -8,8 +8,6 @@ package com.library.bus.management.system.main;
  *
  * @author HP
  */
-
-
 public class FareCalculator {
     
     public static double calculateFare(Route route) {
@@ -30,7 +28,7 @@ public class FareCalculator {
         double typeMultiplier = getBusTypeMultiplier(busType);
         fare *= typeMultiplier;
         
-        fare += fare * 0.05; // 5% weekend surcharge for Sunday 2025-08-18
+        fare += fare * 0.05; // 5% weekend Sunday
         
         return Math.round(fare * 100.0) / 100.0;
     }
@@ -134,7 +132,7 @@ public class FareCalculator {
         System.out.println("Single Fare: Rs. " + String.format("%.2f", calculateFare(route)));
         System.out.println("Total Fare: Rs. " + String.format("%.2f", calculateTotalFare(route, passengers)));
         System.out.println("Date: 2025-08-18 06:26:08 UTC");
-        System.out.println("Booked by: hirushasuhan");
+        System.out.println("Booked by: Hirusha suhan");
         System.out.println("=".repeat(40) + "\n");
     }
 }
