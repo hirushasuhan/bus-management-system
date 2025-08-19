@@ -86,7 +86,7 @@ public class Bus {
             stmt.setString(5, this.driverPhone);
             stmt.setInt(6, this.routeId);
             stmt.setString(7, this.status);
-            stmt.setString(8, "hirushasuhan");
+            stmt.setString(8, "Hirusha suhan");
             
             int result = stmt.executeUpdate();
             if (result > 0) {
@@ -259,3 +259,4 @@ public class Bus {
                 busId, busNumber, capacity, busType, driverName, driverPhone, routeId, status);
     }
 }
+
